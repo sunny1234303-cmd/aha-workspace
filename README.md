@@ -47,7 +47,6 @@ cd aha-workspace
 ```
 aha-workspace/
 ├── .claude/        # 슬래시 커맨드
-├── 00-inbox/       # 메모함 — 생각날 때 바로 텍스트로 적어두는 곳
 ├── 00-system/      # 템플릿·가이드·데이터베이스
 ├── 10-projects/    # 진행 중인 프로젝트
 ├── 20-operation/   # HR / 반복업무 (초기 설정 때 선택)
