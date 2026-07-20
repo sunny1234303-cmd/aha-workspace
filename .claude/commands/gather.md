@@ -1,3 +1,8 @@
+---
+description: 작업 시작 전 5-7개의 구조화된 질문으로 요구사항·제약·성공 기준을 체계적으로 수집하고, 답변 후 이해한 내용을 자동 요약
+argument-hint: "[주제] (선택)"
+---
+
 # /gather
 
 Generate 5-7 numbered questions:

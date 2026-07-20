@@ -1,3 +1,8 @@
+---
+description: 사실 기반·근거 중심으로 객관적 분석 제공 (사실/추론/추측 구분, 신뢰도 표시, 군더더기 없는 직접 답변)
+argument-hint: "[분석할 주제]"
+---
+
 # /truth
 
 **Activate Truth-First + No-Fluff**
