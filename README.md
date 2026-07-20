@@ -16,7 +16,11 @@
 
 ## Quick Start (5분)
 
-### 1. Clone
+### 0. 준비물: Git
+
+이 워크스페이스는 GitHub라는 곳에 저장되어 있습니다. **Clone**은 그걸 내 컴퓨터로 그대로 복사해오는 것을 말합니다. 터미널(Mac: 터미널 앱 / Windows: PowerShell)을 열고 `git --version`을 쳤을 때 버전이 나오면 준비 완료입니다. 안 나온다면 [00-system/git-setup-guide.md](00-system/git-setup-guide.md)의 "Step 1: Git 설치 확인"부터 보세요.
+
+### 1. Clone (내 컴퓨터로 복사하기)
 ```bash
 git clone https://github.com/sunny1234303-cmd/aha-workspace.git
 cd aha-workspace
