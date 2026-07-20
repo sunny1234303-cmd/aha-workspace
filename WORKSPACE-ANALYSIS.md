@@ -15,63 +15,36 @@
 
 ---
 
-## 2. 폴더 구조 (Johnny Decimal 시스템)
+## 2. 구조 (9개 카테고리)
 
 ```
 aha-workspace/
-├── .claude/
-│   └── commands/          # 슬래시 커맨드 (11개)
-├── 00-inbox/              # 빠른 캡처 공간
-├── 00-system/             # 시스템 설정 및 템플릿
-│   ├── 01-templates/      # 재사용 템플릿
-│   ├── 02-automation-scripts/  # 자동화 스크립트
-│   ├── 03-guides/         # 가이드 문서
-│   └── _originals/        # 업그레이드 전 원본 보존 (원문 대조용)
-├── 10-projects/           # 활성 프로젝트 (시한부)
-├── 20-operation/          # 운영 업무 — HR용 또는 반복업무용, 초기 설정 시 택1
-├── 30-knowledge/          # 지식 아카이브
-│   ├── 31-claude-code/    # Claude Code 활용 가이드
-│   └── 32-marketing/      # 마케팅 실무 가이드
-├── 40-schedule/           # 일정관리
-│   ├── 41-daily/          # 일별 기록 (할일 포함, 자유롭게 작성)
-│   ├── 42-weekly/         # 주간 리뷰
-│   └── 43-todos/          # 할일 자동 정리 (daily 기록에서 Claude가 추출)
-├── 50-resources/          # 참고 자료
-└── 90-archive/            # 완료/중단 항목
+├── .claude/        # 슬래시 커맨드 7개
+├── 00-inbox/       # 빠른 캡처
+├── 00-system/      # 템플릿·가이드·데이터베이스
+├── 10-projects/    # 진행 중인 프로젝트
+├── 20-operation/   # HR / 반복업무 (초기 설정 때 선택, 둘 다 가능)
+├── 30-knowledge/   # 용도를 직접 정의하는 레퍼런스 공간
+├── 40-schedule/    # 일정관리 (Daily / Weekly / Todo)
+├── 50-resources/   # 참고 자료
+└── 90-archive/     # 완료된 프로젝트 + 인사이트
 ```
-
-`.claude/skills/`, `.claude/agents/`는 기본 제공하지 않습니다 — 필요할 때 직접 만들어 쓰는 확장 영역입니다.
 
 ---
 
-## 3. Slash Commands (11개)
+## 3. Slash Commands (7개)
 
-### 초기 설정
 | 커맨드 | 설명 |
 |--------|------|
-| `/setup-workspace` | 대화형 CLAUDE.md 자동 생성 + 초기 설정 (20-operation 용도도 이때 선택) |
-| `/setup-google-calendar` | Google Calendar 연결 (OAuth, 선택) |
-
-### Daily Workflow
-| 커맨드 | 설명 |
-|--------|------|
-| `/daily-note` | 오늘 Daily Note 생성/열기 |
-| `/daily-review` | 어제/오늘 변경사항 분석 |
-| `/todo` | 할일 빠른 캡처 + 목록 조회/관리 (daily 기록에서 자동 추출도 겸함) |
-
-### AI 활용 (Orchestration)
-| 커맨드 | 설명 |
-|--------|------|
-| `/thinking-partner` | AI와 대화하며 생각 발전 (소크라테스식 질문) |
+| `/setup-workspace` | 대화형 초기 설정 — CLAUDE.md 생성 + 데이터베이스 생성 + 20-operation 용도 선택 |
+| `/daily-note` | 오늘 기록 생성/열기 |
+| `/todo` | 할일 캡처 + 조회 + daily 기록에서 자동 추출 |
 | `/gather` | 정보 수집 모드 (구조화된 질문 생성) |
 | `/reframe` | 이해 확인 모드 (대화 요약 및 확인) |
 | `/truth` | 사실 기반 분석 모드 (객관적 분석) |
-
-### 지식 관리 / 시스템
-| 커맨드 | 설명 |
-|--------|------|
 | `/idea [카테고리]` | 대화에서 아이디어 추출 후 `30-knowledge/`에 저장 |
-| `/create-command` | 커스텀 슬래시 커맨드 생성 |
+
+Claude Code 기본 내장 커맨드인 `/compact`(대화 요약), `/clear`(대화 초기화)도 함께 자주 씁니다.
 
 ---
 
@@ -86,8 +59,9 @@ aha-workspace/
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    INITIAL SETUP                            │
-│  /setup-workspace → 대화형 정보 수집 → CLAUDE.md 자동 생성  │
-│                   → 20-operation 용도(HR/반복업무) 선택      │
+│  /setup-workspace → 이름/역할/용도 → CLAUDE.md 생성          │
+│                   → 데이터베이스 생성 (00-system/database/)  │
+│                   → 20-operation 용도 선택                   │
 └─────────────────────────────────────────────────────────────┘
                               │
                               v
@@ -95,7 +69,6 @@ aha-workspace/
 │                    DAILY WORKFLOW                            │
 │  /daily-note → 41-daily에 자유 기록 (할일 포함)              │
 │  /todo → 기록에서 할일 자동 추출·정리 → 43-todos             │
-│  /daily-review → 변경사항 분석 → 우선순위 제안               │
 └─────────────────────────────────────────────────────────────┘
                               │
                               v
@@ -104,7 +77,6 @@ aha-workspace/
 │  /gather → 정보 수집 (구조화된 질문)                         │
 │  /reframe → 이해 확인 (대화 요약)                            │
 │  /truth → 사실 기반 분석 (객관적 평가)                       │
-│  /thinking-partner → 소크라테스식 대화                       │
 └─────────────────────────────────────────────────────────────┘
                               │
                               v
@@ -131,27 +103,11 @@ cd aha-workspace
 ```bash
 /daily-note          # 아침: 오늘 계획
 /todo                # 오늘 할 일 확인/추가
-/daily-review        # 저녁: 하루 정리
 ```
 
 ### 생각 정리가 필요할 때
 ```bash
-/thinking-partner    # 소크라테스식 대화
 /gather              # 정보 수집
 /reframe             # 이해 확인
 /truth               # 사실 기반 분석
 ```
-
----
-
-## 7. 원본 대조 (`_originals/`)
-
-`00-system/_originals/`에는 이 워크스페이스가 원본 imi-workspace에서 파생될 때 내용을 고쳐 쓴 문서들의 수정 전 버전이, 원래 상대 경로 그대로 보존되어 있습니다. 무엇이 왜 바뀌었는지 대조하고 싶을 때 참고하세요.
-
----
-
-## 8. Credits
-
-원본 구조는 [Rhim80/imi-workspace](https://github.com/Rhim80/imi-workspace) (이림/hovoo)에서 파생되었습니다.
-
-**Made with Claude Code**

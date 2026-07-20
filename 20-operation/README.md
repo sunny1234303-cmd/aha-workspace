@@ -4,12 +4,13 @@
 
 ## 용도 선택
 
-`/setup-workspace` 실행 시 아래 둘 중 하나를 선택하면, 해당하는 하위 폴더가 만들어집니다.
+`/setup-workspace` 실행 시 필요한 용도를 선택하면, 해당하는 하위 폴더가 만들어집니다. 하나만 골라도 되고, 둘 다 필요하면 둘 다 고를 수 있습니다.
 
-- **HR 용도** → `21-hr/` (입사/퇴사 신고 등 인사 업무)
-- **일상 반복 업무 용도** → `21-routines/` (주간보고, 콘텐츠 발행 루틴 등)
+- **HR만** → `21-hr/`
+- **일상 반복 업무만** → `21-routines/`
+- **둘 다** → `21-hr/` + `22-routines/` (두 카테고리가 공존하므로 번호를 나눠서 생성)
 
-두 용도의 시작 템플릿은 `_templates/`에 미리 준비되어 있습니다 (`_templates/hr/`, `_templates/routines/`). `/setup-workspace`가 선택에 맞는 템플릿을 `21-hr/` 또는 `21-routines/`로 복사해줍니다.
+시작 템플릿은 `_templates/`에 미리 준비되어 있습니다 (`_templates/hr/`, `_templates/routines/`). `/setup-workspace`가 선택에 맞는 템플릿을 알맞은 폴더로 복사해줍니다.
 
 ## 특징
 

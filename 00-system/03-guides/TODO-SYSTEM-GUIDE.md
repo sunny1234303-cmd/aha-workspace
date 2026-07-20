@@ -25,7 +25,7 @@
 ### 3. 매일 아침 루틴
 ```bash
 /daily-note         # 오늘 기록 시작 (할일도 여기 섞어서 적기)
-/daily-review        # 어제-오늘 변경사항 + Todo 상태 체크
+/todo today         # 오늘 할 일 확인
 ```
 
 `/daily-note`에 자유롭게 적은 기록에서 Claude가 할일로 보이는 항목을 자동으로 찾아 `43-todos/active-todos.md`에 정리해줍니다. 굳이 "이건 할일, 이건 기록"으로 나눠 적지 않아도 됩니다.
@@ -72,7 +72,7 @@ Claude Code Workspace
 ### 시나리오 2: 매일 아침 체크
 ```
 9:00 AM
-→ /daily-review 실행
+→ /todo 실행
 → 📋 Todo 상태:
    - 미처리: 7개
    - 오늘 할 일: 3개
@@ -168,4 +168,4 @@ Claude Code Workspace
 ## 📚 상세 문서
 
 - [40-schedule/43-todos/README.md](../../40-schedule/43-todos/README.md)
-- 커맨드 도움말: `.claude/commands/todo.md`, `.claude/commands/daily-review.md`
+- 커맨드 도움말: `.claude/commands/todo.md`, `.claude/commands/daily-note.md`

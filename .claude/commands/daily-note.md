@@ -24,4 +24,4 @@ allowed-tools: Read, Write, Edit, Bash
 
 **참고:**
 - 할일도 이 파일에 자유롭게 섞어서 적어도 됩니다 — `/todo` 실행 시 자동으로 찾아 정리합니다.
-- Google Calendar를 아직 연결하지 않았다면 `/setup-google-calendar` 참고 (선택 사항).
+- Google Calendar 연동은 선택 사항입니다. `gcalcli`를 설치·인증해두면 자동으로 일정을 가져옵니다 (설치 안 했으면 이 부분은 그냥 건너뜁니다).

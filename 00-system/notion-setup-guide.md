@@ -101,7 +101,7 @@ export NOTION_TOKEN="ntn_xxxxxxxxxxxxx"
 이 워크스페이스는 Notion 연동 스킬을 기본 포함하지 않습니다. 두 가지 방법 중 하나를 선택하세요:
 
 - **간단한 방법**: 공식 Notion MCP 서버를 Claude Code에 연결 ([Notion MCP 문서](https://developers.notion.com) 참고)
-- **직접 만드는 방법**: `/create-command`로 위 토큰을 사용하는 Notion 연동 커맨드를 직접 만들기
+- **직접 만드는 방법**: 위 토큰을 사용하는 Notion 연동 스크립트/커맨드를 Claude에게 직접 만들어달라고 요청하기
 
 연결 후 테스트:
 ```
