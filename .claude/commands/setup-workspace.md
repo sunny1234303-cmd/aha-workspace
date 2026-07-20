@@ -95,6 +95,11 @@ aha-workspace를 처음 사용할 때 실행하는 대화형 설정 도구입니
    - 경로: `40-schedule/43-todos/active-todos.md`
    - 이미 빈 템플릿으로 존재 — 없으면 새로 생성
 
+4. **자동 보안 점검 훅 설치** (git 저장소일 때만)
+   - `git config core.hooksPath .githooks` 실행
+   - 이후 `git push`마다 `.githooks/pre-push`가 개인정보·시크릿 패턴을 자동으로 검사하고, 발견되면 push를 막습니다
+   - 실패해도(git 저장소가 아직 아닌 경우 등) 조용히 넘어가고 다음 단계 진행
+
 ---
 
 ### Step 5: 완료 안내
@@ -107,10 +112,12 @@ aha-workspace를 처음 사용할 때 실행하는 대화형 설정 도구입니
 - 00-system/09-database/{이름}.md (첫 데이터베이스)
 - 40-schedule/41-daily/{오늘날짜}.md (첫 Daily Note)
 - 20-operation/21-hr/ 또는 21-routines/ (선택하신 용도)
+- push할 때마다 자동으로 개인정보·시크릿을 검사하는 보안 훅 설치 완료
 
 다음 단계:
 1. `/오늘` - 매일 이 커맨드로 시작 (기록 + 할일을 함께 처리)
 2. 사용법이 더 궁금하면 00-system/orchestration-commands-guide.md 참고
+3. Public으로 처음 공개하기 전엔 `/security-check history`로 커밋 히스토리까지 한 번 점검하세요
 
 궁금한 점이 있으면 언제든 물어보세요!
 ```

@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# aha-workspace 자동 보안 점검 (pre-push hook)
+# 개인정보(PII)·시크릿 패턴이 저장소에 있으면 push를 막습니다.
+# 설치: git config core.hooksPath .githooks (/setup-workspace가 최초 설정 시 자동 실행)
+# 우회(권장하지 않음): git push --no-verify
+
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+
+FOUND=0
+
+check() {
+  local label="$1" pattern="$2"
+  local matches
+  matches=$(git grep -IlE "$pattern" -- . 2>/dev/null || true)
+  if [ -n "$matches" ]; then
+    echo ""
+    echo "[$label] 의심 패턴 발견:"
+    echo "$matches" | sed 's/^/  - /'
+    FOUND=1
+  fi
+}
+
+check "주민등록번호"  '[0-9]{6}[-[:space:]]?[1-4][0-9]{6}'
+check "전화번호"      '01[0-9][-[:space:]]?[0-9]{3,4}[-[:space:]]?[0-9]{4}'
+check "이메일"        '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+check "API 키 패턴"   '(sk-[a-zA-Z0-9]{20,}|AIza[0-9A-Za-z_-]{20,}|gh[po]_[0-9A-Za-z]{30,}|AKIA[0-9A-Z]{12,})'
+check "Private Key"   'BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY'
+
+if [ "$FOUND" -eq 1 ]; then
+  echo ""
+  echo "위 패턴이 발견되어 push를 막았습니다."
+  echo "Claude Code에서 /security-check 를 실행해 하나씩 확인하고 조치한 뒤 다시 push하세요."
+  echo "이 검사는 현재 작업 트리 기준입니다 — Public으로 처음 전환하기 전엔 '/security-check history'로 커밋 히스토리도 확인하세요."
+  exit 1
+fi
+
+exit 0
