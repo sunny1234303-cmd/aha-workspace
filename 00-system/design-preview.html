@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Preview</title>
+<style>
+  :root {
+    --font: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif;
+    --color-bg: #ffffff;
+    --color-text: #111111;
+    --color-border: #dddddd;
+    --radius: 4px;
+    --spacing-unit: 8px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: var(--font);
+    background: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+    padding: calc(var(--spacing-unit) * 6);
+    line-height: 1.6;
+  }
+  h1 { font-size: 28px; margin-bottom: var(--spacing-unit); }
+  h2 { font-size: 20px; margin-top: calc(var(--spacing-unit) * 4); }
+  .card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: calc(var(--spacing-unit) * 3);
+    margin: calc(var(--spacing-unit) * 2) 0;
+  }
+  .swatch {
+    display: inline-block;
+    width: 64px; height: 64px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    margin-right: var(--spacing-unit);
+    vertical-align: middle;
+  }
+  .note { color: #888; font-size: 14px; }
+</style>
+</head>
+<body>
+  <h1>Design Preview</h1>
+  <p class="note">이 페이지는 기본값(빈 시작점)입니다. <code>00-system/design-guide.md</code>에 정의한 값에 맞춰 위 CSS Custom Properties와 아래 컴포넌트를 직접 수정하세요.</p>
+
+  <h2>Typography</h2>
+  <div class="card">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <p>Body text example.</p>
+  </div>
+
+  <h2>Color</h2>
+  <div class="card">
+    <span class="swatch" style="background:var(--color-bg)"></span>
+    <span class="swatch" style="background:var(--color-text)"></span>
+    <span class="swatch" style="background:var(--color-border)"></span>
+  </div>
+
+  <h2>Component</h2>
+  <div class="card">
+    <p>카드/버튼 등 컴포넌트 스타일을 여기 추가해서 확인하세요.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+# CLAUDE.md
+
+> 이 파일은 `/setup-workspace`가 대화형으로 채워서 `CLAUDE.md`로 저장합니다.
+> 직접 복사해서 채워도 됩니다: `cp CLAUDE.md.template CLAUDE.md`
+
+## 사용자 프로필
+
+**이름**:
+**역할**:
+**주요 관심사**:
+
+## 워크스페이스 목적
+
+## 폴더 구조 (Johnny Decimal)
+
+```
+00-inbox/       - 빠른 캡처 (임시 보관)
+00-system/      - 시스템 설정, 템플릿, 가이드
+10-projects/    - 활성 프로젝트 (시한부)
+20-operation/   - 운영 업무 (HR 또는 반복업무 — 아래에서 선택)
+30-knowledge/   - 지식 아카이브
+40-schedule/    - 일정관리 (Daily/Weekly/Todo)
+50-resources/   - 참고 자료
+90-archive/     - 완료된 프로젝트
+```
+
+## 20-operation 용도
+
+- [ ] HR (입사/퇴사 등 인사 업무) — `21-hr` 사용
+- [ ] 일상 반복 업무 (보고, 콘텐츠 발행 루틴 등) — `21-routines` 사용
+
+## 주요 커맨드
+
+| 커맨드 | 용도 |
+|--------|------|
+| `/daily-note` | 오늘 Daily Note 생성 |
+| `/todo` | 할일 캡처/조회 |
+| `/thinking-partner` | 생각 정리 파트너 |
+| `/gather` | 정보 수집 모드 |
+| `/reframe` | 이해 확인 모드 |
+| `/truth` | 사실 기반 분석 모드 |
+
+## 디자인 기준 (선택)
+
+UI/웹 작업을 할 계획이라면, `00-system/design-guide.md`에 직접 디자인 기준(무드/컬러/폰트/스페이싱)을 정의해두면 Claude가 매번 같은 기준으로 작업합니다. 비워두면 매번 새로 물어봅니다.
+
+## 작업 규칙
+
+- 파일 수정 시 기존 파일 편집 우선 (새 파일 생성 최소화)
+- 커밋은 요청 시에만
+- Johnny Decimal 네이밍: `[숫자]-[설명적-이름]`
+
+---
+
+*CLAUDE.md는 Claude가 프로젝트 맥락을 이해하는 핵심 파일입니다.*
