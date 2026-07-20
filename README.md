@@ -38,6 +38,8 @@ cd aha-workspace
 ### 4. 사용법이 궁금하면
 `00-system/orchestration-commands-guide.md`와 `00-system/03-guides/`에서 각 커맨드를 언제·왜·어떻게 쓰는지 확인하세요.
 
+전체 구조를 한눈에 보고 싶다면 [GUIDE.html](./GUIDE.html)을 다운로드해서 브라우저로 열어보세요 (GitHub에서는 소스로만 보여서, 로컬에 받아서 열어야 원래 디자인대로 보입니다).
+
 ## Philosophy
 
 1. AI는 글만 대신 써주는 게 아니라 생각을 확장시켜준다
