@@ -53,6 +53,8 @@ aha-workspace/
 
 `/compact`(대화 요약), `/clear`(대화 초기화), `/resume`(이전 대화 이어하기), `/help`(도움말)도 자주 씁니다.
 
+`git push`할 때마다 `/security-check`가 개인정보·시크릿 노출을 자동으로 검사합니다 (필요하면 직접 실행도 가능).
+
 ---
 
 ## 4. Templates
