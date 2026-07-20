@@ -52,4 +52,4 @@
 
 ## 미리보기
 
-`node 00-system/design-preview-server.js` 실행 후 `http://localhost:3800`에서 위에 정의한 스타일을 확인할 수 있습니다.
+`node 00-system/03-guides/design-preview-server.js` 실행 후 `http://localhost:3800`에서 위에 정의한 스타일을 확인할 수 있습니다.

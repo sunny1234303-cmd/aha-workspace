@@ -1,5 +1,5 @@
 // 디자인 가이드 프리뷰 서버
-// 실행: node 00-system/design-preview-server.js
+// 실행: node 00-system/03-guides/design-preview-server.js
 // 접속: http://localhost:3800
 
 const http = require('http');
@@ -32,5 +32,5 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
   console.log(`\n디자인 프리뷰 서버 시작`);
   console.log(`  브라우저: http://localhost:${PORT}`);
-  console.log(`  가이드:   00-system/design-guide.md\n`);
+  console.log(`  가이드:   00-system/03-guides/design-guide.md\n`);
 });
