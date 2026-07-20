@@ -1,10 +1,10 @@
 ---
-description: 대화 내용에서 아이디어를 추출하고 PKM에 자동 저장
-argument-hint: [카테고리: business/branding/ai/cafe/study/daily/random]
+description: 대화 내용에서 아이디어를 추출하고 30-knowledge에 자동 저장
+argument-hint: [카테고리: business/branding/ai/study/daily/random]
 allowed-tools: Write, Read, Bash
 ---
 
-우리가 방금 나눈 대화에서 아이디어나 인사이트를 추출하여 PKM 시스템에 저장해주세요.
+우리가 방금 나눈 대화에서 아이디어나 인사이트를 추출하여 30-knowledge에 저장해주세요.
 
 **카테고리**: $ARGUMENTS (지정하지 않으면 자동 분류)
 

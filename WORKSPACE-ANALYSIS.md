@@ -4,7 +4,7 @@
 
 ## 1. 개요
 
-**aha-workspace**는 AI를 처음 써보는 사람을 위한 작업 환경으로, Claude Code와 Johnny Decimal 시스템을 결합한 실전 PKM(Personal Knowledge Management) 워크스페이스입니다.
+**aha-workspace**는 클로드 코드를 처음 써보는 사람을 위한 작업 환경입니다. Johnny Decimal 번호 체계로 폴더 위치를 한눈에 알 수 있고, 슬래시 커맨드 몇 개로 기록·정리·할일 관리가 자동으로 이어지도록 만들어졌습니다.
 
 **핵심 철학**:
 1. AI amplifies thinking, not just writing

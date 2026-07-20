@@ -1,7 +1,7 @@
 # aha-workspace
 
-> AI를 처음 써보는 사람을 위한 워크스페이스
-> Claude Code와 Johnny Decimal 시스템으로 만든 실전 PKM 환경
+> 클로드 코드를 처음 써보는 사람을 위한 워크스페이스
+> Johnny Decimal 폴더 구조 + 슬래시 커맨드로, 기록부터 정리까지 자동으로 이어집니다
 
 ---
 
