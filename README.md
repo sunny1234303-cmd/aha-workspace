@@ -55,8 +55,8 @@ aha-workspace/
 ├── 10-projects/    # 진행 중인 프로젝트
 ├── 20-operation/   # HR / 반복업무 (초기 설정 때 선택)
 ├── 30-knowledge/   # 용도를 직접 정의하는 레퍼런스 공간
-├── 40-schedule/    # 일정관리 (Daily / Weekly / Todo)
-├── 50-resources/   # 참고 자료
+├── 70-schedule/    # 일정관리 (Daily / Weekly / Todo)
+├── 80-resources/   # 참고 자료
 └── 90-archive/     # 완료된 프로젝트 + 인사이트
 ```
 

@@ -88,11 +88,11 @@ aha-workspace를 처음 사용할 때 실행하는 대화형 설정 도구입니
    - Q4에서 받은 컬럼으로 마크다운 표 헤더 생성
 
 2. **첫 Daily Note 생성**
-   - 경로: `40-schedule/41-daily/{YYYY-MM-DD}.md`
+   - 경로: `70-schedule/71-daily/{YYYY-MM-DD}.md`
    - 템플릿: `00-system/01-templates/daily-note-template.md` 사용
 
 3. **할 일 파일 확인**
-   - 경로: `40-schedule/43-todos/active-todos.md`
+   - 경로: `70-schedule/73-todos/active-todos.md`
    - 이미 빈 템플릿으로 존재 — 없으면 새로 생성
 
 4. **자동 보안 점검 훅 설치** (git 저장소일 때만)
@@ -110,7 +110,7 @@ aha-workspace를 처음 사용할 때 실행하는 대화형 설정 도구입니
 생성된 파일:
 - CLAUDE.md (프로젝트 컨텍스트)
 - 00-system/09-database/{이름}.md (첫 데이터베이스)
-- 40-schedule/41-daily/{오늘날짜}.md (첫 Daily Note)
+- 70-schedule/71-daily/{오늘날짜}.md (첫 Daily Note)
 - 20-operation/21-hr/ 또는 21-routines/ (선택하신 용도)
 - push할 때마다 자동으로 개인정보·시크릿을 검사하는 보안 훅 설치 완료
 

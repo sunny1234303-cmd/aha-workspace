@@ -27,7 +27,7 @@
 /오늘 stats          # 통계
 ```
 
-기록과 할일을 따로 나눠 적을 필요 없습니다 — `41-daily/`에 자유롭게 쓴 내용에서 Claude가 알아서 할일을 찾아 `43-todos/active-todos.md`로 정리합니다.
+기록과 할일을 따로 나눠 적을 필요 없습니다 — `71-daily/`에 자유롭게 쓴 내용에서 Claude가 알아서 할일을 찾아 `73-todos/active-todos.md`로 정리합니다.
 
 ---
 
@@ -38,9 +38,9 @@ Claude Code Workspace
 └── /오늘  → 오늘 기록 + 할일 추가·조회·통계를 한 커맨드로
 
 저장 위치:
-40-schedule/
-├── 41-daily/YYYY-MM-DD.md   # 오늘 기록
-└── 43-todos/
+70-schedule/
+├── 71-daily/YYYY-MM-DD.md   # 오늘 기록
+└── 73-todos/
     ├── active-todos.md       # 할일 중앙 저장소 ⭐
     └── completed-todos.md    # 완료 아카이브
 ```
@@ -56,7 +56,7 @@ Claude Code Workspace
 - **프로젝트**: 어떤 프로젝트와 연결됐는지
 
 ### daily 기록에서 자동 추출
-`41-daily/`에 하루 기록을 자유롭게 쓰면, `/오늘` 실행 시 Claude가 "~해야 함", "~하기" 같은 할일성 문장을 찾아 `active-todos.md`로 옮겨 정리합니다.
+`71-daily/`에 하루 기록을 자유롭게 쓰면, `/오늘` 실행 시 Claude가 "~해야 함", "~하기" 같은 할일성 문장을 찾아 `active-todos.md`로 옮겨 정리합니다.
 
 ---
 
@@ -115,13 +115,13 @@ Claude Code Workspace
 
 ### active-todos.md 직접 편집
 
-파일 위치: `40-schedule/43-todos/active-todos.md`
+파일 위치: `70-schedule/73-todos/active-todos.md`
 
 ```markdown
 ## 📥 Inbox (처리 안 한 것들)
 - [ ] 계약서 서명 요청 보내기
   - added: 2026-01-15 15:23
-  - context: 41-daily/2026-01-15.md
+  - context: 71-daily/2026-01-15.md
   - priority: high
   - project: project-a
 
@@ -151,5 +151,5 @@ Claude Code Workspace
 
 ## 📚 상세 문서
 
-- [40-schedule/43-todos/README.md](../../40-schedule/43-todos/README.md)
+- [70-schedule/73-todos/README.md](../../70-schedule/73-todos/README.md)
 - 커맨드 도움말: `.claude/commands/오늘.md`
