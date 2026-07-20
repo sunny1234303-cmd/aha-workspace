@@ -109,9 +109,8 @@ aha-workspace를 처음 사용할 때 실행하는 대화형 설정 도구입니
 - 20-operation/21-hr/ 또는 21-routines/ (선택하신 용도)
 
 다음 단계:
-1. `/daily-note` - 매일 기록 작성
-2. `/todo` - 할일 캡처/조회
-3. 사용법이 더 궁금하면 00-system/orchestration-commands-guide.md 참고
+1. `/오늘` - 매일 이 커맨드로 시작 (기록 + 할일을 함께 처리)
+2. 사용법이 더 궁금하면 00-system/orchestration-commands-guide.md 참고
 
 궁금한 점이 있으면 언제든 물어보세요!
 ```

@@ -47,7 +47,7 @@ cd aha-workspace
 ```
 aha-workspace/
 ├── .claude/        # 슬래시 커맨드
-├── 00-inbox/       # 빠른 캡처
+├── 00-inbox/       # 메모함 — 생각날 때 바로 텍스트로 적어두는 곳
 ├── 00-system/      # 템플릿·가이드·데이터베이스
 ├── 10-projects/    # 진행 중인 프로젝트
 ├── 20-operation/   # HR / 반복업무 (초기 설정 때 선택)
@@ -68,17 +68,17 @@ aha-workspace/
 
 ## Slash Commands
 
-| 커맨드 | 용도 |
-|--------|------|
-| `/setup-workspace` | 대화형 초기 설정 (CLAUDE.md + 데이터베이스) |
-| `/daily-note` | 오늘 기록 생성/열기 |
-| `/todo` | 할일 캡처/조회 |
-| `/gather` | 정보 수집 모드 |
-| `/reframe` | 이해 확인 모드 |
-| `/truth` | 사실 기반 분석 모드 |
-| `/idea` | 대화에서 아이디어 추출·저장 |
+`/setup-workspace`는 최초 1회만 실행하는 설정 커맨드라 아래 목록에서는 뺐습니다. 나머지는 실제로 쓰게 되는 순서대로 정리했습니다.
 
-이 외에 Claude Code 자체 기본 커맨드인 `/compact`(대화 요약), `/clear`(대화 초기화)도 자주 씁니다.
+| 커맨드 | 언제 쓰나 |
+|--------|------|
+| `/오늘` | 매일 — 오늘 기록 + 할일 캡처/조회를 한 번에 |
+| `/gather` | 생각 정리 시작 — 필요한 걸 구조화된 질문으로 먼저 모음 |
+| `/reframe` | 그 다음 — 지금까지 이해한 내용 요약·확인 |
+| `/truth` | 판단이 필요할 때 — 사실 기반으로 객관적 분석 |
+| `/idea` | 대화 중 좋은 생각이 나왔을 때 — `30-knowledge`에 저장 |
+
+Claude Code 자체 기본 커맨드도 자주 씁니다: `/compact`(대화 요약), `/clear`(대화 초기화), `/resume`(이전 대화 이어하기), `/help`(막혔을 때 도움말).
 
 각 커맨드가 언제·왜·어떻게 조합되는지는 `00-system/03-guides/`와 `00-system/orchestration-commands-guide.md`를 참고하세요.
 
