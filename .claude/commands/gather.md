@@ -7,7 +7,7 @@ Generate 5-7 numbered questions:
 - Context/background
 - Edge cases
 
-Track responses → refine → once all answers are in, automatically continue straight into the /reframe synthesis (same turn, no separate command needed)
+Track responses → refine → once all answers are in, immediately synthesize understanding in the same response (no separate command needed)
 
 **Output:**
 ```
@@ -23,4 +23,31 @@ I'll gather the necessary information.
 Answer all at once or individually.
 ```
 
-Once the user answers, do not wait for them to type `/reframe` — immediately produce the reframe synthesis (see reframe.md: situation → objective → requirements → constraints → success → assumptions, ending with a confirmation question) in the same response.
+Once the user answers, immediately produce a synthesis in the same response:
+
+```
+## My Understanding
+
+[2-3 sentences: situation/context]
+
+**Core Objective:** [what needs achieving]
+
+**Key Requirements:**
+- [R1]
+- [R2]
+- [R3]
+
+**Constraints/Limitations:**
+- [C1]
+- [C2]
+
+**Success:** [desired end state]
+
+**Assumptions:**
+- [A1]
+- [A2]
+
+Correct? Proceed with [next action]?
+```
+
+Wait for confirmation before proceeding.
