@@ -71,9 +71,9 @@ aha-workspace를 처음 사용할 때 실행하는 대화형 설정 도구입니
 
 ### Step 3: CLAUDE.md 자동 생성
 
-`CLAUDE.md.template`을 읽어서, 수집한 정보로 채운 뒤 워크스페이스 루트에 `CLAUDE.md`로 저장합니다. 기존 CLAUDE.md가 있으면 덮어쓸지 먼저 확인하세요.
+[[CLAUDE.md.template]]을 읽어서, 수집한 정보로 채운 뒤 워크스페이스 루트에 `CLAUDE.md`로 저장합니다. 기존 CLAUDE.md가 있으면 덮어쓸지 먼저 확인하세요.
 
-`CLAUDE.md.template`에서 채울 항목:
+[[CLAUDE.md.template]]에서 채울 항목:
 - 사용자 프로필 (이름/역할)
 - 워크스페이스 활용 용도
 - 데이터베이스 정보 (파일 위치, 구글시트 연동 필요 여부)
@@ -89,11 +89,11 @@ aha-workspace를 처음 사용할 때 실행하는 대화형 설정 도구입니
 
 2. **첫 Daily Note 생성**
    - 경로: `70-schedule/71-daily/{YYYY-MM-DD}.md`
-   - 템플릿: `00-system/01-templates/daily-note-template.md` 사용
+   - 템플릿: [[daily-note-template]] 사용
 
 3. **할 일 파일 확인**
    - 경로: `70-schedule/73-todos/active-todos.md`
-   - 이미 빈 템플릿으로 존재 — 없으면 새로 생성
+   - 이미 빈 템플릿([[active-todos]])으로 존재 — 없으면 새로 생성
 
 4. **자동 보안 점검 훅 설치** (git 저장소일 때만)
    - `git config core.hooksPath .githooks` 실행
@@ -115,9 +115,9 @@ aha-workspace를 처음 사용할 때 실행하는 대화형 설정 도구입니
 - push할 때마다 자동으로 개인정보·시크릿을 검사하는 보안 훅 설치 완료
 
 다음 단계:
-1. `/오늘` - 매일 이 커맨드로 시작 (기록 + 할일을 함께 처리)
-2. 사용법이 더 궁금하면 00-system/orchestration-commands-guide.md 참고
-3. Public으로 처음 공개하기 전엔 `/security-check history`로 커밋 히스토리까지 한 번 점검하세요
+1. [[오늘|/오늘]] - 매일 이 커맨드로 시작 (기록 + 할일을 함께 처리)
+2. 사용법이 더 궁금하면 [[orchestration-commands-guide]] 참고
+3. Public으로 처음 공개하기 전엔 [[security-check|/security-check]] history로 커밋 히스토리까지 한 번 점검하세요
 
 궁금한 점이 있으면 언제든 물어보세요!
 ```

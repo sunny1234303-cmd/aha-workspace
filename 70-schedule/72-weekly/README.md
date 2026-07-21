@@ -10,7 +10,7 @@
 
 ## 템플릿
 
-`00-system/01-templates/weekly-review-template.md`를 참고하세요.
+[[weekly-review-template]]를 참고하세요.
 
 ## 내용 예시
 

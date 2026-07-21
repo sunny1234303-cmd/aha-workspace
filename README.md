@@ -33,10 +33,10 @@ cd aha-workspace
 ```
 /setup-workspace
 ```
-이름, 역할, 활용 용도를 물어보고 `CLAUDE.md`를 자동으로 만들어줍니다. 표로 관리하고 싶은 목록이 있으면 데이터베이스도 같이 만들고, `20-operation`을 HR용으로 쓸지 반복업무용으로 쓸지(또는 둘 다)도 이때 정합니다.
+이름, 역할, 활용 용도를 물어보고 `CLAUDE.md`를 자동으로 만들어줍니다 ([[CLAUDE.md.template|템플릿]] 기반). 표로 관리하고 싶은 목록이 있으면 데이터베이스도 같이 만들고, `20-operation`을 HR용으로 쓸지 반복업무용으로 쓸지(또는 둘 다)도 이때 정합니다.
 
 ### 4. 사용법이 궁금하면
-`00-system/orchestration-commands-guide.md`와 `00-system/03-guides/`에서 각 커맨드를 언제·왜·어떻게 쓰는지 확인하세요.
+[[orchestration-commands-guide]]와 `00-system/03-guides/`에서 각 커맨드를 언제·왜·어떻게 쓰는지 확인하세요.
 
 전체 구조를 한눈에 보고 싶다면 [GUIDE.html](./GUIDE.html)을 다운로드해서 브라우저로 열어보세요 (GitHub에서는 소스로만 보여서, 로컬에 받아서 열어야 원래 디자인대로 보입니다).
 
@@ -77,20 +77,20 @@ aha-workspace/
 
 | 커맨드 | 언제 쓰나 |
 |--------|------|
-| `/오늘` | 매일 — 오늘 기록 + 할일 캡처/조회를 한 번에 |
-| `/gather` | 생각 정리 시작 — 구조화된 질문으로 모으고, 답변하면 이해 확인까지 자동으로 이어짐 |
-| `/truth` | 판단이 필요할 때 — 사실 기반으로 객관적 분석 |
-| `/idea` | 대화 중 좋은 생각이 나왔을 때 — `30-knowledge`에 저장 |
+| [[오늘\|/오늘]] | 매일 — 오늘 기록 + 할일 캡처/조회를 한 번에 |
+| [[gather\|/gather]] | 생각 정리 시작 — 구조화된 질문으로 모으고, 답변하면 이해 확인까지 자동으로 이어짐 |
+| [[truth\|/truth]] | 판단이 필요할 때 — 사실 기반으로 객관적 분석 |
+| [[idea\|/idea]] | 대화 중 좋은 생각이 나왔을 때 — [[30-knowledge/README\|30-knowledge]]에 저장 |
 
 Claude Code 자체 기본 커맨드도 자주 씁니다: `/compact`(대화 요약), `/clear`(대화 초기화), `/resume`(이전 대화 이어하기), `/help`(막혔을 때 도움말).
 
-`git push`할 때마다 `/security-check`가 개인정보·시크릿 노출을 자동으로 검사합니다 (필요하면 직접 실행도 가능).
+`git push`할 때마다 [[security-check|/security-check]]가 개인정보·시크릿 노출을 자동으로 검사합니다 (필요하면 직접 실행도 가능).
 
-각 커맨드가 언제·왜·어떻게 조합되는지는 `00-system/03-guides/`와 `00-system/orchestration-commands-guide.md`를 참고하세요.
+각 커맨드가 언제·왜·어떻게 조합되는지는 `00-system/03-guides/`와 [[orchestration-commands-guide]]를 참고하세요.
 
 ## 실습해보고 싶다면
 
-`00-system/claude-code-practice-guide.md`에서 Claude Code 기본 사용법을 익힐 수 있습니다.
+[[claude-code-practice-guide]]에서 Claude Code 기본 사용법을 익힐 수 있습니다.
 
 ## Security
 

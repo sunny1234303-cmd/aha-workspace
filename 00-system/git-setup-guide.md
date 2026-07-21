@@ -168,13 +168,13 @@ git checkout -- 파일명
 
 ### 자동 보안 점검 (pre-push 훅)
 
-이 워크스페이스는 `git push`할 때마다 개인정보·시크릿 패턴을 자동으로 검사하는 훅(`.githooks/pre-push`)이 포함되어 있습니다. `/setup-workspace`를 실행하면 자동으로 설치되지만, 직접 clone만 했다면 최초 1회 아래 명령을 실행하세요:
+이 워크스페이스는 `git push`할 때마다 개인정보·시크릿 패턴을 자동으로 검사하는 훅(`.githooks/pre-push`)이 포함되어 있습니다. [[setup-workspace|/setup-workspace]]를 실행하면 자동으로 설치되지만, 직접 clone만 했다면 최초 1회 아래 명령을 실행하세요:
 
 ```bash
 git config core.hooksPath .githooks
 ```
 
-이후 push할 때 의심 패턴이 발견되면 push가 막히고 안내 메시지가 뜹니다. Claude Code에서 `/security-check`로 확인·조치한 뒤 다시 push하면 됩니다. Public으로 처음 전환하기 전에는 `/security-check history`로 커밋 히스토리까지 검사하세요.
+이후 push할 때 의심 패턴이 발견되면 push가 막히고 안내 메시지가 뜹니다. Claude Code에서 [[security-check|/security-check]]로 확인·조치한 뒤 다시 push하면 됩니다. Public으로 처음 전환하기 전에는 [[security-check|/security-check]] history로 커밋 히스토리까지 검사하세요.
 
 ---
 

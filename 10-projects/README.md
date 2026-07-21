@@ -16,4 +16,4 @@
 
 ## 템플릿
 
-`00-system/01-templates/Project Template.md`를 사용하여 새 프로젝트를 시작하세요.
+[[Project Template]]를 사용하여 새 프로젝트를 시작하세요.

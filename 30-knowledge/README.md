@@ -13,7 +13,7 @@
 
 ## 기본 제공 하위 폴더
 
-- `31-claude-code/` - Claude Code 활용 가이드 (서브에이전트, 스킬/커맨드, 베스트 프랙티스)
-- `32-marketing/` - 마케팅 실무 참고 가이드 (GA4, SEO/GEO, 캠페인 용어 등)
+- [[30-knowledge/31-claude-code/README|31-claude-code/]] - Claude Code 활용 가이드 (서브에이전트, 스킬/커맨드, 베스트 프랙티스)
+- [[30-knowledge/32-marketing/README|32-marketing/]] - 마케팅 실무 참고 가이드 (GA4, SEO/GEO, 캠페인 용어 등)
 
 필요 없으면 지우고, 다른 이름의 폴더로 바꿔 써도 됩니다.

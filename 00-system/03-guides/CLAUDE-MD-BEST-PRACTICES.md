@@ -48,7 +48,7 @@ CLAUDE.md에서: "빌드 방법은 `00-system/03-guides/building_the_project.md`
 ### 5. 자동 생성 피하기
 - CLAUDE.md는 가장 leverage가 큰 파일
 - 수동으로 신중히 작성
-- `/setup-workspace`로 자동 생성된 내용도 검토 후 정리
+- [[setup-workspace|/setup-workspace]]로 자동 생성된 내용도 검토 후 정리
 
 ## Claude가 CLAUDE.md를 무시하는 이유
 

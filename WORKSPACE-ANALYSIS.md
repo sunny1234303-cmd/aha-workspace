@@ -37,28 +37,28 @@ aha-workspace/
 
 | 커맨드 | 설명 |
 |--------|------|
-| `/setup-workspace` | 대화형 초기 설정 — CLAUDE.md 생성 + 데이터베이스 생성 + 20-operation 용도 선택 |
+| [[setup-workspace\|/setup-workspace]] | 대화형 초기 설정 — CLAUDE.md 생성 + 데이터베이스 생성 + 20-operation 용도 선택 |
 
 ### 실제 쓰는 순서 (4개)
 
 | 커맨드 | 설명 |
 |--------|------|
-| `/오늘` | 매일 — 오늘 기록 생성/열기 + 할일 캡처·조회·자동 추출 |
-| `/gather` | 정보 수집 모드 (구조화된 질문 생성, 답변하면 이해 확인 요약까지 자동 연결) |
-| `/truth` | 사실 기반 분석 모드 (객관적 분석) |
-| `/idea [카테고리]` | 대화에서 아이디어 추출 후 `30-knowledge/`에 저장 |
+| [[오늘\|/오늘]] | 매일 — 오늘 기록 생성/열기 + 할일 캡처·조회·자동 추출 |
+| [[gather\|/gather]] | 정보 수집 모드 (구조화된 질문 생성, 답변하면 이해 확인 요약까지 자동 연결) |
+| [[truth\|/truth]] | 사실 기반 분석 모드 (객관적 분석) |
+| [[idea\|/idea]] [카테고리] | 대화에서 아이디어 추출 후 [[30-knowledge/README\|30-knowledge/]]에 저장 |
 
 ### Claude Code 기본 내장
 
 `/compact`(대화 요약), `/clear`(대화 초기화), `/resume`(이전 대화 이어하기), `/help`(도움말)도 자주 씁니다.
 
-`git push`할 때마다 `/security-check`가 개인정보·시크릿 노출을 자동으로 검사합니다 (필요하면 직접 실행도 가능).
+`git push`할 때마다 [[security-check|/security-check]]가 개인정보·시크릿 노출을 자동으로 검사합니다 (필요하면 직접 실행도 가능).
 
 ---
 
 ## 4. Templates
 
-`00-system/01-templates/`에 기본 템플릿(Daily Note, Weekly Review, Project)을 제공합니다.
+`00-system/01-templates/`에 기본 템플릿([[daily-note-template|Daily Note]], [[weekly-review-template|Weekly Review]], [[Project Template|Project]])을 제공합니다.
 
 ---
 

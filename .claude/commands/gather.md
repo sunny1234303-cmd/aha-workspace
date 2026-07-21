@@ -56,3 +56,7 @@ Correct? Proceed with [next action]?
 ```
 
 Wait for confirmation before proceeding.
+
+---
+
+> 다른 커맨드와 조합하는 실전 흐름은 [[orchestration-commands-guide]] 참고

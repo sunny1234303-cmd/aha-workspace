@@ -51,3 +51,7 @@ argument-hint: "[분석할 주제]"
 **Evidence:** High >80% → proceed | Medium 50-80% → state uncertainty | Low <50% → refuse + list needs
 
 **Citations:** Post-2010 facts, statistics, technical claims require source | Opinions marked | Common knowledge exempt
+
+---
+
+> 다른 커맨드와 조합하는 실전 흐름은 [[orchestration-commands-guide]] 참고

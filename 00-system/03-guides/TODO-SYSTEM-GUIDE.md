@@ -27,7 +27,7 @@
 /오늘 stats          # 통계
 ```
 
-기록과 할일을 따로 나눠 적을 필요 없습니다 — `71-daily/`에 자유롭게 쓴 내용에서 Claude가 알아서 할일을 찾아 `73-todos/active-todos.md`로 정리합니다.
+기록과 할일을 따로 나눠 적을 필요 없습니다 — [[70-schedule/71-daily/README|71-daily/]]에 자유롭게 쓴 내용에서 Claude가 알아서 할일을 찾아 [[active-todos]]로 정리합니다.
 
 ---
 
@@ -115,7 +115,7 @@ Claude Code Workspace
 
 ### active-todos.md 직접 편집
 
-파일 위치: `70-schedule/73-todos/active-todos.md`
+파일 위치: [[active-todos]] (`70-schedule/73-todos/active-todos.md`)
 
 ```markdown
 ## 📥 Inbox (처리 안 한 것들)
@@ -152,4 +152,4 @@ Claude Code Workspace
 ## 📚 상세 문서
 
 - [70-schedule/73-todos/README.md](../../70-schedule/73-todos/README.md)
-- 커맨드 도움말: `.claude/commands/오늘.md`
+- 커맨드 도움말: [[오늘]]

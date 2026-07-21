@@ -51,7 +51,7 @@
 
 ## 데이터 수집 방법
 
-네이버 데이터랩은 API를 제공합니다 (https://developers.naver.com/apps 에서 발급). 이 워크스페이스엔 수집 스크립트가 기본 포함되어 있지 않으니, Claude에게 "네이버 데이터랩 API로 검색지수 가져오는 스크립트 만들어줘"라고 요청해서 `00-system/02-automation-scripts/`에 만들어 쓰세요.
+네이버 데이터랩은 API를 제공합니다 (https://developers.naver.com/apps 에서 발급). 이 워크스페이스엔 수집 스크립트가 기본 포함되어 있지 않으니, Claude에게 "네이버 데이터랩 API로 검색지수 가져오는 스크립트 만들어줘"라고 요청해서 [[00-system/02-automation-scripts/README|00-system/02-automation-scripts/]]에 만들어 쓰세요.
 
 ---
 
