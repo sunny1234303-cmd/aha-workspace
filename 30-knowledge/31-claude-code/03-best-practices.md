@@ -89,7 +89,7 @@ hooks:
           command: "./scripts/validate.sh"
 ```
 
-Bash 실행 전 스크립트로 위험한 명령을 차단할 수 있습니다.
+Bash 실행 전 스크립트로 위험한 명령을 차단할 수 있습니다. 다른 이벤트 종류와 MCP 서버 연동까지 다루는 심화 내용은 [[04-hooks-mcp]] 참고.
 
 ### 5. 포그라운드 vs 백그라운드
 
@@ -384,4 +384,4 @@ model: sonnet
 
 ---
 
-*이전: [스킬 & 슬래시 커맨드](02-skills-commands.md)*
+*이전: [스킬 & 슬래시 커맨드](02-skills-commands.md) | 다음: [Hooks & MCP](04-hooks-mcp.md)*
